@@ -71,106 +71,102 @@ const Home = () => {
   return (
     <div className="font-sans text-gray-900 bg-white">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-900 via-indigo-900 to-sky-900 text-white overflow-hidden">
-        {/* Background Shapes */}
-        <div className="absolute inset-0 -z-10">
-          <div className="absolute top-[-100px] left-[-120px] w-96 h-96 bg-indigo-700 rounded-full opacity-20 blur-3xl animate-pulseSlow" />
-          <div className="absolute bottom-[-80px] right-[-80px] w-72 h-72 bg-sky-700 rounded-full opacity-20 blur-2xl animate-pulseSlow delay-700" />
-          <svg
-            className="absolute top-24 right-24 w-48 h-48 text-indigo-300 opacity-10 animate-spin-slow"
-            fill="currentColor"
-            viewBox="0 0 24 24"
-            aria-hidden="true"
-          >
-            <path d="M12 2L2 7l10 5 10-5-10-5zm0 18.184l-10-5V17l10 5 10-5v-1.816l-10 5z" />
-          </svg>
-        </div>
 
-        
+<section className="relative bg-gradient-to-br from-gray-900 via-indigo-900 via-purple-900 to-blue-900 text-white overflow-hidden">
+  {/* Background Circles */}
+  <div className="absolute inset-0 -z-10">
+    <div className="absolute -top-40 -left-40 w-[420px] h-[420px] bg-indigo-700 rounded-full opacity-30 blur-[130px] animate-pulseSlow"></div>
+    <div className="absolute -bottom-36 -right-36 w-[360px] h-[360px] bg-purple-700 rounded-full opacity-25 blur-[110px] animate-pulseSlow delay-700"></div>
+    <svg
+      className="absolute top-24 right-24 w-48 h-48 text-indigo-500 opacity-10 animate-spin-slow"
+      fill="currentColor"
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+    >
+      <path d="M12 2L2 7l10 5 10-5-10-5zm0 18.184l-10-5V17l10 5 10-5v-1.816l-10 5z" />
+    </svg>
+  </div>
 
-         {/* Content */}
-        <div className="max-w-7xl mx-auto px-6 py-28 md:py-36 flex flex-col md:flex-row items-center gap-20">
-          {/* Left Text */}
-          <div
-            className="flex-1 text-center md:text-left max-w-xl"
-            style={{ animation: "fadeInLeft 1s ease forwards", opacity: 0 }}
-            onAnimationEnd={(e) => (e.currentTarget.style.opacity = 1)}
-          >
-            <h1 className="text-5xl font-extrabold leading-tight drop-shadow-lg tracking-tight">
-              Effortless API Management.
-              <br />
-              <span className="text-sky-400">Powerful Results.</span>
-            </h1>
-            <p className="mt-6 text-lg text-sky-200 leading-relaxed drop-shadow-md max-w-md">
-              API PRO is the all-in-one platform designed to take your APIs from
-              development to production with unparalleled speed, security, and AI-driven insights.
-            </p>
-            <button
-              className="mt-12 bg-sky-600 hover:bg-sky-700 transition text-white font-semibold px-12 py-4 rounded-full shadow-xl hover:shadow-2xl transform hover:scale-105 duration-300"
-              aria-label="Get Started for Free"
-            >
-              Get Started for Free
-            </button>
-            <p className="mt-5 text-sm text-sky-300 tracking-wide font-semibold">
-              Trusted by 1,000+ developers and growing.
-            </p>
-          </div>
+  {/* Content */}
+  <div className="max-w-7xl mx-auto px-6 py-28 md:py-36 flex flex-col md:flex-row items-center gap-20">
+    <div
+      className="flex-1 text-center md:text-left max-w-xl"
+      style={{ animation: "fadeInLeft 1s ease forwards", opacity: 0 }}
+      onAnimationEnd={(e) => (e.currentTarget.style.opacity = 1)}
+    >
+      <h1 className="text-5xl font-extrabold leading-tight drop-shadow-md tracking-tight">
+        Effortless API Management.<br />
+        <span className="text-purple-400">Powerful Results.</span>
+      </h1>
+      <p className="mt-6 text-lg text-purple-300 leading-relaxed max-w-md">
+        API PRO is the all-in-one platform designed to take your APIs from
+        development to production with unparalleled speed, security, and AI-driven insights.
+      </p>
+      <button
+        className="mt-12 bg-purple-600 hover:bg-purple-700 transition text-white font-semibold px-12 py-4 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 duration-300"
+        aria-label="Get Started for Free"
+      >
+        Get Started for Free
+      </button>
+      <p className="mt-5 text-sm text-purple-400 tracking-wide font-semibold">
+        Trusted by 1,000+ developers and growing.
+      </p>
+    </div>
 
-          {/* Right Image Carousel */}
-          <div className="relative flex-1 max-w-lg rounded-3xl overflow-hidden shadow-2xl ring-2 ring-sky-500 h-[360px] md:h-[480px]">
-            {heroImages.map((img, idx) => (
-              <img
-                key={idx}
-                src={img}
-                alt={`API illustration ${idx + 1}`}
-                loading="lazy"
-                className={`
-                  absolute inset-0 w-full h-full object-cover transition-opacity duration-1500 ease-in-out
-                  ${idx === currentHeroIndex ? "opacity-100 scale-105" : "opacity-0 scale-100"}
-                `}
-                style={{ transitionProperty: "opacity, transform" }}
-              />
-            ))}
-          </div>
-        </div>
+    <div className="relative flex-1 max-w-lg rounded-3xl overflow-hidden shadow-lg ring-2 ring-purple-600 h-[360px] md:h-[480px]">
+      {heroImages.map((img, idx) => (
+        <img
+          key={idx}
+          src={img}
+          alt={`API illustration ${idx + 1}`}
+          loading="lazy"
+          className={`
+            absolute inset-0 w-full h-full object-cover transition-opacity duration-1500 ease-in-out
+            ${idx === currentHeroIndex ? "opacity-100 scale-105" : "opacity-0 scale-100"}
+          `}
+          style={{ transitionProperty: "opacity, transform" }}
+        />
+      ))}
+    </div>
+  </div>
 
-        {/* Scroll Down Button */}
-        <button
-          onClick={scrollToFeatures}
-          aria-label="Scroll down to features"
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 bg-white bg-opacity-30 hover:bg-opacity-60 text-sky-900 rounded-full p-4 shadow-lg animate-bounce transition"
-          title="Scroll to Features"
-          type="button"
-        >
-          <ChevronDownIcon className="w-9 h-9" />
-        </button>
+  {/* Scroll Down Button */}
+  <button
+    onClick={scrollToFeatures}
+    aria-label="Scroll down to features"
+    className="absolute bottom-8 left-1/2 -translate-x-1/2 bg-white bg-opacity-30 hover:bg-opacity-60 text-purple-700 rounded-full p-4 shadow-lg animate-bounce transition"
+    title="Scroll to Features"
+    type="button"
+  >
+    <ChevronDownIcon className="w-9 h-9" />
+  </button>
 
-        {/* Animations */}
-        <style>{`
-          @keyframes pulseSlow {
-            0%, 100% { opacity: 0.15; transform: scale(1); }
-            50% { opacity: 0.3; transform: scale(1.05); }
-          }
-          .animate-pulseSlow {
-            animation: pulseSlow 8s ease-in-out infinite;
-          }
-          @keyframes fadeInLeft {
-            from { opacity: 0; transform: translateX(-40px); }
-            to { opacity: 1; transform: translateX(0); }
-          }
-          @keyframes fadeInRight {
-            from { opacity: 0; transform: translateX(40px); }
-            to { opacity: 1; transform: translateX(0); }
-          }
-          .animate-spin-slow {
-            animation: spin 60s linear infinite;
-          }
-          @keyframes fadeInUp {
-            0% { opacity: 0; transform: translateY(40px); }
-            100% { opacity: 1; transform: translateY(0); }
-          }
-        `}</style>
-      </section>
+  {/* Animations */}
+  <style>{`
+    @keyframes pulseSlow {
+      0%, 100% { opacity: 0.15; transform: scale(1); }
+      50% { opacity: 0.3; transform: scale(1.05); }
+    }
+    .animate-pulseSlow {
+      animation: pulseSlow 8s ease-in-out infinite;
+    }
+    @keyframes fadeInLeft {
+      from { opacity: 0; transform: translateX(-40px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+    @keyframes fadeInRight {
+      from { opacity: 0; transform: translateX(40px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+    .animate-spin-slow {
+      animation: spin 60s linear infinite;
+    }
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(40px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  `}</style>
+</section>
 
 
       {/* Features Section */}
