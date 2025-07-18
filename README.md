@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# API PRO — AI-Powered API Management Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+API PRO is a modern and professional promotional website designed to showcase API services with speed, security, and developer-friendly features. Built with React, Tailwind CSS, and Framer Motion, it offers smooth animations, dynamic layouts, and a clean, responsive design inspired by real SaaS platforms.
 
-## Available Scripts
+------------------------------------------------------------------------------------------------------------------------------------
 
-In the project directory, you can run:
+##  How to Run the Project Locally
 
-### `npm start`
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Janusha-S/api-pro.git
+   cd api-pro
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. Install dependencies:
+npm install
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. Start the development server:
+npm start
 
-### `npm test`
+4. Open your browser and go to http://localhost:3000 to see the site in action.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+------------------------------------------------------------------------------------------------------------------------------------
 
-### `npm run build`
+AI Tools Used
+This project was developed using multiple AI-powered tools as part of the assessment requirements:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Lovable AI
+Used to design the layout and structure of the Home page.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Helped create the trusted companies logo section by providing ideas for logos and reducing design time.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. v0.dev by Vercel
+Used to generate the Docs page layout from natural language prompts.
 
-### `npm run eject`
+Helped speed up the creation of documentation-style UI components.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. ChatGPT (OpenAI)
+Assisted with writing React component logic, handling animations with Framer Motion, and applying Tailwind CSS styles.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Provided help in debugging and optimizing responsive designs.
+------------------------------------------------------------------------------------------------------------------------------------
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Technical Requirements & How They Are Met
+1. Framework: The entire website is built using React, a modern JavaScript framework.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. Responsiveness: The site is fully responsive and looks great on desktop, tablet, and mobile devices using Tailwind CSS responsive utilities.
 
-## Learn More
+3. API Integration:
+On the About Us page, the site fetches the first 10 users from the free JSONPlaceholder API and displays them as "The Team" with their names, emails, and company names.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. Version Control: The project is maintained using Git and hosted on GitHub at https://github.com/Janusha-S/api-pro.
+------------------------------------------------------------------------------------------------------------------------------------
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Additional Notes
+The UI is designed with clean, professional SaaS styling and smooth animations.
 
-### Code Splitting
+The trusted companies section features a scrolling marquee with logos inspired by Lovable AI.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The site uses React hooks like useEffect and useState for dynamic data fetching and UI updates.
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Framer Motion is used for subtle entry and scroll animations to enhance user experience.
