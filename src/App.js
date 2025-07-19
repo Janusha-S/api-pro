@@ -12,7 +12,9 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <main className="pt-20 max-w-7xl mx-auto p-6">
+<main className="pt-20 w-full min-h-screen bg-cover bg-center bg-no-repeat bg-white" style={{ backgroundImage: "url('/your-image-path.jpg')" }}>
+
+
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -20,6 +22,7 @@ function App() {
           <Route path="/docs" element={<Docs />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+         
         <Footer />
       </main>
     </Router>

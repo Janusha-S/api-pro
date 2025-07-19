@@ -24,19 +24,19 @@ export default function About() {
 
   return (
     <div className="font-['Inter'] bg-white text-gray-900">
-      {/* Mission Section */}
+      {/* Our Mission Section */}
       <section className="max-w-7xl mx-auto py-24 px-6 flex flex-col-reverse lg:flex-row items-center gap-16">
         <div className="w-full lg:w-1/2 animate-slideFromLeft">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-            Our Mission
+            We Empower Developers to Build The Future.
           </h2>
           <div className="w-20 h-1 bg-indigo-600 mb-6 rounded-full"></div>
           <p className="text-lg leading-relaxed text-gray-700 mb-4">
-            At API PRO, we empower developers and businesses by simplifying the complex world of APIs.
-            We are driven by the mission to make API development more intuitive, scalable, and accessible for all.
+            In today's digital world, APIs are the backbone of innovation. Yet, managing them has become increasingly complex.
           </p>
           <p className="text-lg leading-relaxed text-gray-700">
-            We believe in building tools that reduce friction and help turn ideas into reality — faster.
+            API PRO was founded on a simple principle: to give developers and businesses the tools they need to build, manage,
+            and scale their APIs without the headache. We handle the complexity, so you can focus on creating amazing products.
           </p>
         </div>
         <div className="w-full lg:w-1/2 animate-slideFromRight">
@@ -54,10 +54,10 @@ export default function About() {
       <section className="bg-gradient-to-br from-indigo-50 via-white to-indigo-100 py-24 px-6">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
-            Meet the Team
+            The Team Behind API PRO
           </h2>
           <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-            Passionate individuals building great API tools for developers.
+            This section dynamically displays our team fetched from our trusted API endpoint.
           </p>
 
           {loading && (
